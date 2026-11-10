@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#163c55">
+  <meta name="description" content="曹智文的机械设计作品集：并联机械臂、采摘末端执行器、机器人试验平台实物及茶园、实验室调试视频。">
+  <title>曹智文 · 机械设计作品集</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到作品内容</a>
+  <header class="site-header wrap">
+    <a class="brand" href="#top" aria-label="曹智文作品集首页"><span class="brand-mark">CZW</span><span>曹智文<span class="brand-separator"> / </span>机械设计作品集</span></a>
+    <nav aria-label="页面导航"><a href="#video">视频展示</a><a href="#details">结构细节</a></nav>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">2027届硕士 · 机械设计与非标自动化</p>
+        <h1 id="hero-title">并联机械臂与<br>采摘机器人样机</h1>
+        <p class="hero-intro">展示机构设计、样机装配及现场调试中的实物记录，包含试验平台、并联机械臂、采摘末端执行器与双目相机安装结构。</p>
+        <div class="hero-actions"><a class="primary-link" href="#video">观看样机调试视频 <span aria-hidden="true">↗</span></a><span class="media-count">5张照片 · 2段视频</span></div>
+        <div class="project-credit"><p class="credit-label">本人主要工作</p><p>试验平台整体结构设计、并联机械臂与末端执行器设计、安装调试，以及视觉定位和现场联调。</p></div>
+      </div>
+      <figure class="hero-figure">
+        <button class="image-button hero-image" type="button" data-photo="0" aria-label="查看整机试验平台大图">
+          <img src="https://yu-hao-0323.github.io/yuhao-mechanical-portfolio/assets/robot-platform.jpg" alt="蓝色机器人试验平台，内部安装并联机械臂和末端执行器" width="1800" height="1350" fetchpriority="high">
+          <span class="zoom-hint" aria-hidden="true">查看大图 <span>↗</span></span>
+        </button>
+        <figcaption><span>01 / 整机试验平台</span><span class="caption-detail">实验室装配与调试记录</span></figcaption>
+      </figure>
+    </section>
+
+    <section class="video-section" id="video" aria-labelledby="video-title">
+      <div class="wrap">
+        <div class="section-heading"><div><p class="eyebrow">ROBOT DEMONSTRATION</p><h2 id="video-title">样机调试视频</h2></div><span class="duration">2段视频</span></div>
+        <article class="video-card" data-video-card data-video-name="茶园现场视频" aria-labelledby="field-video-title">
+          <div class="video-card-heading"><h3 id="field-video-title">01 / 茶园现场调试</h3><span class="duration">约35秒</span></div>
+          <div class="video-shell">
+            <video id="demo-video" controls playsinline webkit-playsinline preload="metadata" poster="https://yu-hao-0323.github.io/yuhao-mechanical-portfolio/assets/video-poster.jpg" aria-label="采摘机器人茶园现场调试视频" width="1280" height="720">
+              <source src="https://yu-hao-0323.github.io/yuhao-mechanical-portfolio/assets/demonstration.mp4?v=original" type="video/mp4">
+              您的浏览器不支持直接播放视频，请<a href="https://yu-hao-0323.github.io/yuhao-mechanical-portfolio/assets/demonstration.mp4?v=original" download="曹智文-茶园现场调试-原视频.mp4">下载原视频</a>观看。
+            </video>
+          </div>
+          <div class="video-toolbar"><p>采摘机器人在茶园中的实物运行与现场联调记录。</p><div><button class="text-button" type="button" id="play-toggle" data-play-toggle aria-label="播放茶园现场视频">播放视频 <span aria-hidden="true">▶</span></button><a class="video-direct" href="https://yu-hao-0323.github.io/yuhao-mechanical-portfolio/assets/demonstration.mp4?v=original" download="曹智文-茶园现场调试-原视频.mp4">下载原视频 ↓</a></div></div>
+          <p class="video-error" id="video-error" data-video-error hidden>视频加载失败或当前浏览器无法播放，请重试，或下载原视频观看。</p>
+        </article>
+        <article class="video-card" data-video-card data-video-name="实验室调试视频" aria-labelledby="lab-video-title">
+          <div class="video-card-heading"><h3 id="lab-video-title">02 / 实验室采摘动作调试</h3><span class="duration">约17秒</span></div>
+          <div class="video-shell">
+            <video id="demo-video-2" controls playsinline webkit-playsinline preload="metadata" poster="https://yu-hao-0323.github.io/yuhao-mechanical-portfolio/assets/video-poster-2.jpg" aria-label="采摘机器人实验室动作调试视频" width="1920" height="1080">
+              <source src="https://yu-hao-0323.github.io/yuhao-mechanical-portfolio/assets/demonstration-2.mp4" type="video/mp4">
+              您的浏览器不支持直接播放视频，请<a href="https://yu-hao-0323.github.io/yuhao-mechanical-portfolio/assets/demonstration-2.mp4" download="曹智文-实验室采摘调试-原视频.mp4">下载原视频</a>观看。
+            </video>
+          </div>
+          <div class="video-toolbar"><p>实验室环境下的机械臂运动与末端执行器动作记录。</p><div><button class="text-button" type="button" data-play-toggle aria-label="播放实验室调试视频">播放视频 <span aria-hidden="true">▶</span></button><a class="video-direct" href="https://yu-hao-0323.github.io/yuhao-mechanical-portfolio/assets/demonstration-2.mp4" download="曹智文-实验室采摘调试-原视频.mp4">下载原视频 ↓</a></div></div>
+          <p class="video-error" data-video-error hidden>视频加载失败或当前浏览器无法播放，请重试，或下载原视频观看。</p>
+        </article>
+        <p class="video-viewing-note">若当前浏览器无法直接播放，可点击“下载原视频”观看。</p>
+      </div>
+    </section>
+
+    <section class="details-section wrap" id="details" aria-labelledby="details-title">
+      <div class="section-heading"><div><p class="eyebrow">MECHANICAL DETAILS</p><h2 id="details-title">机构与装配细节</h2></div><p class="section-note">点击照片查看完整大图</p></div>
+      <div class="gallery">
+        <figure class="photo-card"><button class="image-button" type="button" data-photo="1" aria-label="查看并联机械臂结构大图"><img src="https://yu-hao-0323.github.io/yuhao-mechanical-portfolio/assets/parallel-arm.jpg" alt="并联机械臂的电机安装、连杆及关节连接结构" width="1350" height="1800" loading="lazy" decoding="async"><span class="zoom-hint" aria-hidden="true">↗</span></button><figcaption><span class="photo-number">02</span><div><h3>并联机械臂结构</h3><p>驱动安装、连杆与关节连接细节。</p></div></figcaption></figure>
+        <figure class="photo-card"><button class="image-button" type="button" data-photo="2" aria-label="查看末端执行器与双目相机大图"><img src="https://yu-hao-0323.github.io/yuhao-mechanical-portfolio/assets/end-effector-front.jpg" alt="采摘末端执行器、双目相机与黑色安装支架" width="1350" height="1800" loading="lazy" decoding="async"><span class="zoom-hint" aria-hidden="true">↗</span></button><figcaption><span class="photo-number">03</span><div><h3>末端执行器与双目相机</h3><p>执行器、相机与安装支架的实物组合。</p></div></figcaption></figure>
+        <figure class="photo-card"><button class="image-button" type="button" data-photo="3" aria-label="查看末端执行器装配视角大图"><img src="https://yu-hao-0323.github.io/yuhao-mechanical-portfolio/assets/end-effector-side.jpg" alt="从另一角度展示末端执行器、相机支架和连接结构" width="1350" height="1800" loading="lazy" decoding="async"><span class="zoom-hint" aria-hidden="true">↗</span></button><figcaption><span class="photo-number">04</span><div><h3>末端执行器装配视角</h3><p>从另一视角展示安装位置与结构布局。</p></div></figcaption></figure>
+        <figure class="photo-card"><button class="image-button" type="button" data-photo="4" aria-label="查看驱动模块与整机布线大图"><img src="https://yu-hao-0323.github.io/yuhao-mechanical-portfolio/assets/drive-wiring.jpg" alt="机器人试验平台侧面的驱动模块与线缆布置" width="1350" height="1800" loading="lazy" decoding="async"><span class="zoom-hint" aria-hidden="true">↗</span></button><figcaption><span class="photo-number">05</span><div><h3>驱动模块与整机布线</h3><p>整机侧面的驱动模块及线缆布置。</p></div></figcaption></figure>
+      </div>
+    </section>
+
+    <footer class="site-footer wrap"><p>曹智文 · 机械设计作品集</p><a href="#top">返回顶部 ↑</a></footer>
+  </main>
+
+  <dialog id="photo-viewer" aria-labelledby="viewer-title">
+    <div class="viewer-header"><span id="viewer-title">作品照片</span><button class="viewer-close" type="button" id="viewer-close" aria-label="关闭大图">×</button></div>
+    <div class="viewer-image-wrap"><img id="viewer-image" alt=""></div>
+    <div class="viewer-footer"><button type="button" id="photo-prev" aria-label="上一张照片">←</button><span id="viewer-count" aria-live="polite">1 / 5</span><button type="button" id="photo-next" aria-label="下一张照片">→</button></div>
+  </dialog>
+</body>
+</html>
